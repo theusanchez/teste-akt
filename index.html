@@ -17,18 +17,20 @@
 
 <body>
     <header>
-        <nav class="navbar navbar-expand-lg navbar-light">
-            <a href="#">Cozinha</a>
-            <a href="#">Banheiro</a>
-            <a href="#">Lavanderia</a>
-            <a href="#">Corporativo</a>
-            <a href="#">Válvulas e registros</a>
-            <div class="vertical-line">
-
+        <nav class="navbar navbar-expand-lg navbar-light navigation-bar">
+            <figure class="img-header">
+                <img src="callwe-logo-header.png" alt="">
+            </figure>
+            <div class="links-wrapper">
+                <a class="no-decoration-link links-header" href="#">Cozinha</a>
+                <a class="no-decoration-link links-header" href="#">Banheiro</a>
+                <a class="no-decoration-link links-header" href="#">Lavanderia</a>
+                <a class="no-decoration-link links-header" href="#">Corporativo</a>
+                <a class="no-decoration-link links-header" href="#">Válvulas e registros</a>
             </div>
-            <a href="#">Atendimento e suporte</a>
-            <a href="#" class="search-button"></a>
-            <button class="expand-menu"></button>
+            <a class="no-decoration-link links-header mr-4" href="#">Atendimento e suporte</a>
+            <a class="no-decoration-link mr-4 navbar-icon" href="#"><i class="bi bi-search"></i></a>
+            <a href=""><i class="bi bi-list mr-4 navbar-icon"></i></a>
         </nav>
         <figure>
             <img src="imagem_dev.jpeg" alt="Imagem de uma mulher tomando uma ducha." class="img-fluid header-image">
@@ -89,7 +91,7 @@
                     </h1>
                 </div>
                 <div class="videos-carousel">
-                    <div class="row">
+                    <div class="videos-wrapper">
                         <div><i class="bi bi-chevron-left"></i></div>
                         <div class="youtube-video">
                             <i class="fab fa-youtube"></i>
@@ -103,48 +105,59 @@
                         <div><i class="bi bi-chevron-right"></i></div>
                     </div>
                 </div>
+                <div class="video-controller">
+                    <div class="video-controller-wrapper">
+                        <span class="video-controller-bullet">
+
+                        </span>
+                        <span class="bullet-disable video-controller-bullet">
+
+                        </span>
+                        <span class="bullet-disable video-controller-bullet">
+
+                        </span>
+                    </div>
+                </div>
             </div>
             <form>
-
-
                 <h1 class="h1-titles">Enviar solicitação</h1>
                 <div class="row">
                     <div class="form-input col form-group">
-                        <label for="nome">Nome*</label>
+                        <label class="form-label" for="nome">Nome*</label>
                         <input type="text" name="nome" id="nome" class="form-control" required>
                     </div>
                     <div class="form-input col form-group">
-                        <label for="email">Email*</label>
+                        <label class="form-label" for="email">Email*</label>
                         <input type="email" name="email" id="email" class="form-control" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-input col form-group">
-                        <label for="telefone">Telefone</label>
+                        <label class="form-label" for="telefone">Telefone</label>
                         <input type="text" name="telefone" id="telefone" class="form-control">
                     </div>
                     <div class="form-input col form-group">
-                        <label for="cep">CEP*</label>
+                        <label class="form-label" for="cep">CEP*</label>
                         <input type="text" name="cep" id="cep" class="form-control" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-input col-9 form-group">
-                        <label for="endereco">Endereço*</label>
+                        <label class="form-label" for="endereco">Endereço*</label>
                         <input type="text" name="endereco" id="endereco" class="form-control" required>
                     </div>
                     <div class="form-input col-3 form-group">
-                        <label for="numero">Número*</label>
+                        <label class="form-label" for="numero">Número*</label>
                         <input type="text" name="numero" id="numero" class="form-control" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="form-input col form-group">
-                        <label for="cidade">Cidade*</label>
+                        <label class="form-label" for="cidade">Cidade*</label>
                         <input type="text" name="cidade" id="cidade" class="form-control" required>
                     </div>
                     <div class="form-input col form-group">
-                        <label for="estado">Estado*</label>
+                        <label class="form-label" for="estado">Estado*</label>
                         <input type="text" name="estado" id="estado" class="form-control" required>
                     </div>
                 </div>
@@ -157,25 +170,29 @@
     </div>
     </section>
     <footer>
-        <div class="row footer-row">
-            <div class="col-2 about-callwe">
-                <figure class="callwe-logo">
-                    <img src="callwe-logo.png" alt="logo da callwe">
-                </figure>
-                <a href="#">
-                    <i class="bi bi-instagram footer-icon"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-facebook footer-icon"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-youtube footer-icon"></i>
-                </a>
-                <a href="#">
-                    <i class="bi bi-linkedin footer-icon"></i>
-                </a>
+        <div class="footer-container">
+            <div class="about-callwe footer-side">
+                <div class="wraper">
+                    <figure class="callwe-logo">
+                        <img src="callwe-logo.png" alt="logo da callwe">
+                    </figure>
+                    <div>
+                        <a href="#">
+                            <i class="bi bi-instagram footer-icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-facebook footer-icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-youtube footer-icon"></i>
+                        </a>
+                        <a href="#">
+                            <i class="bi bi-linkedin footer-icon"></i>
+                        </a>
+                    </div>
+                </div>
             </div>
-            <div class="col-2 about-callwe">
+            <div class="about-callwe footer-menu">
                 <ul>
                     <li>
                         <p>Sobre a callwe</p>
@@ -186,9 +203,11 @@
                     <li><a href="#">Trabalhe Conosco</a></li>
                 </ul>
             </div>
-            <div class="col-2 products">
-                <p>Produtos</p>
+            <div class="products footer-menu">
                 <ul>
+                    <li>
+                        <p>Produtos</p>
+                    </li>
                     <li><a href="#"> Banheiro</a></li>
                     <li><a href="#"> Cozinha</a></li>
                     <li><a href="#"> Lavanderia</a></li>
@@ -196,24 +215,29 @@
                     <li><a href="#"> Válvulas e registros</a></li>
                 </ul>
             </div>
-            <div class="col-2 suport">
-                <p>Suporte</p>
+            <div class="suport footer-menu">
                 <ul>
+                    <li>
+                        <p>Suporte</p>
+                    </li>
                     <li><a href="#"> Política de Qualidade</a></li>
                     <li><a href="#"> Garantia Toda Vida</a></li>
                 </ul>
             </div>
-            <div class="col-4 atendimento">
-                <p>Atendimento</p>
+            <div class="atendimento footer-menu">
                 <ul>
                     <li>
-                        <a href="#"> Callwe Responde 0000 000 000</a>
+                        <p>Atendimento</p>
                     </li>
-                    <li>
-                        <a href="#"> Televendas 0000 000 000</a>
+                    <li class="support-phone">
+                        <a href="#"> Callwe Responde <br> 0000 000 000</a>
+                    </li>
+                    <li class="support-phone">
+                        <a href="#">Televendas<br> 0000 000 000</a>
                     </li>
                 </ul>
             </div>
+            <div class="footer-side atendimento"></div>
         </div>
     </footer>
 </body>

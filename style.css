@@ -1,0 +1,123 @@
+body {
+  font-family: "muli", sans-serif;
+}
+form {
+  display: flex;
+  flex-direction: column;
+}
+.container {
+  padding: 0 7rem;
+}
+.header-image {
+  width: 100%;
+}
+.content-links {
+  margin-top: 3rem;
+}
+.content-buttons i {
+  font-size: 4rem;
+  color: #00abe1;
+}
+.content-buttons a {
+  text-decoration: none;
+  color: #626366;
+  font-size: 12px;
+}
+.content-title {
+  font-weight: 700;
+  font-style: normal;
+  font-size: 15px;
+  color: #626366;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+}
+.content-buttons {
+  border: 1px solid #e2e2e2;
+  text-align: center;
+  margin: 12px;
+  padding: 1rem 1.2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.youtube-video {
+  border: 1px solid #e2e2e2;
+  width: 13rem;
+  height: 7.3rem;
+  margin: 12px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.youtube-video i {
+  font-size: 4rem;
+  color: #de3132;
+  align-items: center;
+}
+.h1-titles {
+  font-weight: 700;
+  color: #626366;
+  font-size: 30px;
+  text-align: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.videos-carousel {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.form-button {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  align-self: center;
+}
+.form-button button {
+  font-weight: 700;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #00aae2;
+  text-transform: uppercase;
+  border-radius: 0px;
+  padding: 1rem 2rem;
+  border: 1px solid #00aae2;
+  background-color: transparent;
+}
+.footer-icon {
+  color: #ffffff;
+}
+.footer-row {
+  margin-top: 3rem;
+  display: flex;
+}
+footer p {
+  font-size: 14px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+footer ul li {
+  list-style: none;
+}
+footer ul li a {
+  text-decoration: none;
+  font-size: 12px;
+  color: #ffffff;
+}
+.products {
+  background-color: #383838;
+  padding: 2rem;
+}
+.suport {
+  background-color: #565656;
+  padding: 2rem;
+}
+.atendimento {
+  background-color: #686868;
+  padding: 2rem;
+}
+.about-callwe {
+  background-color: #222222;
+  padding: 2rem;
+}

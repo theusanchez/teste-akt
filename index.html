@@ -1,14 +1,23 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css"
+        integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.typekit.net/olg6ugf.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
     <title>Document</title>
 </head>
+
 <body>
     <header>
-        <nav>
+        <nav class="navbar navbar-expand-lg navbar-light">
             <a href="#">Cozinha</a>
             <a href="#">Banheiro</a>
             <a href="#">Lavanderia</a>
@@ -22,187 +31,191 @@
             <button class="expand-menu"></button>
         </nav>
         <figure>
-            <img src="imagem_dev.jpeg" alt="Imagem de uma mulher tomando uma ducha.">
+            <img src="imagem_dev.jpeg" alt="Imagem de uma mulher tomando uma ducha." class="img-fluid header-image">
         </figure>
     </header>
-    <section>
-        <div class="content-links">
-            <div class="content-buttons">
-                <i class=""></i>
-                <h2 class="content-title">Produtos</h2>
-                
+    <div class="container">
+        <section>
+            <div class="content-links">
+                <div class="row">
+                    <div class="content-buttons col">
+                        <i class="bi bi-display"></i>
+                        <p class="content-title">Produtos</p>
+                        <a href="#">ver artigos <span class="bi bi-chevron-down"></span></a>
+                    </div>
+                    <div class="content-buttons col">
+                        <i class="bi bi-display"></i>
+                        <p class="content-title">Garantia</p>
+                        <a href="#">ver artigos <span class="bi bi-chevron-down"></span></a>
+                    </div>
+                    <div class="content-buttons col">
+                        <i class="bi bi-display"></i>
+                        <p class="content-title">Assistência Técnica Autorizada</p>
+                        <a href="#">ver artigos <span class="bi bi-chevron-down"></span></a>
+                    </div>
+                    <div class="content-buttons col">
+                        <i class="bi bi-display"></i>
+                        <p class="content-title">Tecnologias</p>
+                        <a href="#">ver artigos <span class="bi bi-chevron-down"></span></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="content-buttons col">
+                        <i class="bi bi-display"></i>
+                        <p class="content-title">Trabalhe Conosco</p>
+                        <a href="#">ver artigos <span class="bi bi-chevron-down"></span></a>
+                    </div>
+                    <div class="content-buttons col">
+                        <i class="bi bi-display"></i>
+                        <p class="content-title">Projeto</p>
+                        <a href="#">ver artigos <span class="bi bi-chevron-down"></span></a>
+                    </div>
+                    <div class="content-buttons col">
+                        <i class="bi bi-display"></i>
+                        <p class="content-title">Onde encontrar</p>
+                        <a href="#">ver artigos <span class="bi bi-chevron-down"></span></a>
+                    </div>
+                    <div class="content-buttons col">
+                        <i class="bi bi-display"></i>
+                        <p class="content-title">Cadastro garantia toda vida</p>
+                        <a href="#">ver artigos <span class="bi bi-chevron-down"></span></a>
+                    </div>
+                </div>
             </div>
-            <div class="content-buttons">
-                <i class=""></i>
-                <h2 class="content-title">Garantia</h2>
-
+            <div class="videos">
+                <div class="row">
+                    <h1 class="col h1-titles">
+                        Videos
+                    </h1>
+                </div>
+                <div class="videos-carousel">
+                    <div class="row">
+                        <div><i class="bi bi-chevron-left"></i></div>
+                        <div class="youtube-video">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="youtube-video">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div class="youtube-video">
+                            <i class="fab fa-youtube"></i>
+                        </div>
+                        <div><i class="bi bi-chevron-right"></i></div>
+                    </div>
+                </div>
             </div>
-            <div class="content-buttons">
-                <i class=""></i>
-                <h2 class="content-title">Assistência Técnica Autorizada</h2>
+            <form>
 
-            </div>
-            <div class="content-buttons">
-                <i class=""></i>
-                <h2 class="content-title">Tecnologias</h2>
 
-            </div>
-            <div class="content-buttons">
-                <i class=""></i>
-                <h2 class="content-title">Trabalhe Conosco</h2>
-
-            </div>
-            <div class="content-buttons">
-                <i class=""></i>
-                <h2 class="content-title">Projeto</h2>
-
-            </div>
-            <div class="content-buttons">
-
-                <h2 class="content-title">Onde encontrar</h2>
-
-            </div>
-            <div class="content-buttons">
-
-                <h2 class="content-title">Cadastro garantia toda vida</h2>
-
-            </div>
-        </div>
-        <div class="videos">
-            <h1>
-                Videos
-            </h1>
-            <div class="videos-carousel">
-                <div class="youtube-video"></div>
-                <div class="youtube-video"></div>
-                <div class="youtube-video"></div>
-                <div class="youtube-video"></div>
-                <div class="youtube-video"></div>
-                <div class="youtube-video"></div>
-                <div class="youtube-video"></div>
-                <div class="youtube-video"></div>
-                <div class="youtube-video"></div>
-            </div>
-        </div>
-        <form>
-            <h1>Enviar solicitação</h1>
-           <div class="form-input">
-               <label for="nome">Nome*</label>
-               <input type="text" name="" id="" required>
-           </div>
-           <div class="form-input">
-               <label for="email">Email*</label>
-               <input type="email" name="email" id="email" required>
-           </div>
-           <div class="form-input">
-               <label for="telefone">Telefone</label>
-               <input type="text" name="telefone" id="telefone">
-           </div>
-           <div class="form-input">
-               <label for="cep">CEP*</label>
-               <input type="text" name="cep" id="cep" required>
-           </div>
-           <div class="form-input">
-               <label for="endereco">Endereço*</label>
-               <input type="text" name="endereco" id="endereco" required>
-           </div>
-           <div class="form-input">
-               <label for="numero">Número*</label>
-               <input type="text" name="numero" id="numero" required>
-           </div>
-           <div class="form-input">
-               <label for="cidade">Cidade*</label>
-               <input type="text" name="cidade" id="cidade" required>
-           </div>
-           <div class="form-input">
-               <label for="estado">Estado*</label>
-               <input type="text" name="estado" id="estado" required>
-           </div>
-            <button type="submit">Envie sua solicitação</button>
-        </form>
+                <h1 class="h1-titles">Enviar solicitação</h1>
+                <div class="row">
+                    <div class="form-input col form-group">
+                        <label for="nome">Nome*</label>
+                        <input type="text" name="nome" id="nome" class="form-control" required>
+                    </div>
+                    <div class="form-input col form-group">
+                        <label for="email">Email*</label>
+                        <input type="email" name="email" id="email" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-input col form-group">
+                        <label for="telefone">Telefone</label>
+                        <input type="text" name="telefone" id="telefone" class="form-control">
+                    </div>
+                    <div class="form-input col form-group">
+                        <label for="cep">CEP*</label>
+                        <input type="text" name="cep" id="cep" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-input col-9 form-group">
+                        <label for="endereco">Endereço*</label>
+                        <input type="text" name="endereco" id="endereco" class="form-control" required>
+                    </div>
+                    <div class="form-input col-3 form-group">
+                        <label for="numero">Número*</label>
+                        <input type="text" name="numero" id="numero" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-input col form-group">
+                        <label for="cidade">Cidade*</label>
+                        <input type="text" name="cidade" id="cidade" class="form-control" required>
+                    </div>
+                    <div class="form-input col form-group">
+                        <label for="estado">Estado*</label>
+                        <input type="text" name="estado" id="estado" class="form-control" required>
+                    </div>
+                </div>
+                <div class="row form-button">
+                    <button type="submit"><span class="button-text">Envie sua
+                            solicitação</span>
+                    </button>
+                </div>
+            </form>
+    </div>
     </section>
     <footer>
-        <div>
-            <figure class="callwe-logo">
-                <img src="#" alt="">
-            </figure>
-            <a href="">
-                <i></i>
-            </a>
-            <a href="">
-                <i></i>
-            </a>
-            <a href="">
-                <i></i>
-            </a>
-            <a href="">
-                <i></i>
-            </a>
-        </div>
-        <div>
-            <h2>Sobre a callwe</h2>
-            <ul>
+        <div class="row footer-row">
+            <div class="col-2 about-callwe">
+                <figure class="callwe-logo">
+                    <img src="callwe-logo.png" alt="logo da callwe">
+                </figure>
                 <a href="#">
-                    <li>Institucional</li>
+                    <i class="bi bi-instagram footer-icon"></i>
                 </a>
                 <a href="#">
-                    <li>História</li>
+                    <i class="bi bi-facebook footer-icon"></i>
                 </a>
                 <a href="#">
-                    <li>Sustentabilidade</li>
+                    <i class="bi bi-youtube footer-icon"></i>
                 </a>
                 <a href="#">
-                    <li>Trabalhe Conosco</li>
+                    <i class="bi bi-linkedin footer-icon"></i>
                 </a>
-            </ul>
-        </div>
-        <div>
-            <h2>Produtos</h2>
-            <ul>
-                <a href="#">
-                    <li>Banheiro</li>
-                </a>
-                <a href="#">
-                    <li>Cozinha</li>
-                </a>
-                <a href="#">
-                    <li>Lavanderia</li>
-                </a>
-                <a href="#">
-                    <li>Corporativo</li>
-                </a>
-                <a href="#">
-                    <li>Válvulas e registros</li>
-                </a>
-            </ul>
-        </div>
-        <div>
-            <h2>Suporte</h2>
-            <ul>
-                <a href="#">
-                    <li>Política de Qualidade</li>
-                </a>
-                <a href="#">
-                    <li>Garantia Toda Vida</li>
-                </a>
-            </ul>
-        </div>
-        <div>
-            <h2>Atendimento</h2>
-            <ul>
-                <a href="#">
-                    
-                    <li>Callwe Responde<br>
-                        0000 000 000
+            </div>
+            <div class="col-2 about-callwe">
+                <ul>
+                    <li>
+                        <p>Sobre a callwe</p>
                     </li>
-                </a>
-                <a href="#">
-                    <li>Televendas<br>
-                        0000 000 000
+                    <li><a href="#">Institucional</a></li>
+                    <li><a href="">História</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                    <li><a href="#">Trabalhe Conosco</a></li>
+                </ul>
+            </div>
+            <div class="col-2 products">
+                <p>Produtos</p>
+                <ul>
+                    <li><a href="#"> Banheiro</a></li>
+                    <li><a href="#"> Cozinha</a></li>
+                    <li><a href="#"> Lavanderia</a></li>
+                    <li><a href="#"> Corporativo</a></li>
+                    <li><a href="#"> Válvulas e registros</a></li>
+                </ul>
+            </div>
+            <div class="col-2 suport">
+                <p>Suporte</p>
+                <ul>
+                    <li><a href="#"> Política de Qualidade</a></li>
+                    <li><a href="#"> Garantia Toda Vida</a></li>
+                </ul>
+            </div>
+            <div class="col-4 atendimento">
+                <p>Atendimento</p>
+                <ul>
+                    <li>
+                        <a href="#"> Callwe Responde 0000 000 000</a>
                     </li>
-                </a>
-            </ul>
+                    <li>
+                        <a href="#"> Televendas 0000 000 000</a>
+                    </li>
+                </ul>
+            </div>
         </div>
     </footer>
 </body>
+
 </html>

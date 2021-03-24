@@ -22,3 +22,9 @@ cep.addEventListener("blur", (e) => {
     })
     .catch((e) => console.log("Deu Erro: " + e, message));
 });
+
+const element = document.getElementById("hamburguerMenu");
+
+element.onclick = function toggleMenu() {
+  document.querySelector(".links-wrapper").classList.toggle("active");
+};

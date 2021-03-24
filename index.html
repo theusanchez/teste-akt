@@ -12,6 +12,7 @@
     <link rel="stylesheet" href="https://use.typekit.net/olg6ugf.css">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+    <script src="index.js"> </script>
     <title>Document</title>
 </head>
 
@@ -138,7 +139,8 @@
                     </div>
                     <div class="form-input col form-group">
                         <label class="form-label" for="cep">CEP*</label>
-                        <input type="text" name="cep" id="cep" class="form-control" required>
+                        <input type="text" name="cep" id="cep" class="form-control" onblur="searchcep(this.value)"
+                            required>
                     </div>
                 </div>
                 <div class="row">

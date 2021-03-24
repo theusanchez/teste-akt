@@ -1,42 +1,24 @@
-function clear_cep_form() {
-  document.getElementById("endereco").value = "";
-  document.getElementById("cidade").value = "";
-  document.getElementById("estado").value = "";
-}
+const cep = document.querySelector("#cep");
 
-function my_callback(content) {
-  if (!("erro" in content)) {
-    document.getElementById("endereco").value = content.logradouro;
-    document.getElementById("cidade").value = content.localidade;
-    document.getElementById("estado").value = content.uf;
-  } else {
-    clear_cep_form();
-    alert("CEP não encontrado.");
-  }
-}
+cep.addEventListener("blur", (e) => {
+  let search = cep.value.replace("-", "");
+  const options = {
+    method: "GET",
+    mode: "cors",
+    cache: "default",
+  };
 
-function searchcep(valor) {
-  var cep = valor.replace(/\D/g, "");
-
-  if (cep != "") {
-    var validate_cep = /^[0-9]{8}$/;
-
-    if (validate_cep.test(cep)) {
-      document.getElementById("endereco").value = "...";
-      document.getElementById("cidade").value = "...";
-      document.getElementById("estado").value = "...";
-
-      var script = document.createElement("script");
-
-      script.src =
-        "https://viacep.com.br/ws/" + cep + "/json/?callback=my_callback";
-
-      document.body.appendChild(script);
-    } else {
-      clear_cep_form();
-      alert("Formato de CEP inválido.");
+  const showData = (result) => {
+    for (const campo in result) {
+      if (document.querySelector("#" + campo)) {
+        document.querySelector("#" + campo).value = result[campo];
+      }
     }
-  } else {
-    clear_cep_form();
-  }
-}
+  };
+
+  fetch(`https://viacep.com.br/ws/${search}/json/`, options)
+    .then((response) => {
+      response.json().then((data) => showData(data));
+    })
+    .catch((e) => console.log("Deu Erro: " + e, message));
+});

@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
         integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
 
-    <title>Document</title>
+    <title>CallWe</title>
 </head>
 
 <body>
@@ -29,9 +29,14 @@
                 <a class="no-decoration-link links-header" href="#">Corporativo</a>
                 <a class="no-decoration-link links-header" href="#">Válvulas e registros</a>
             </div>
-            <a class="no-decoration-link links-header mr-4" href="#">Atendimento e suporte</a>
-            <a class="no-decoration-link mr-4 navbar-icon" href="#"><i class="bi bi-search"></i></a>
-            <a href=""><i class="bi bi-list mr-4 navbar-icon"></i></a>
+            <div class="secondary-links">
+                <a class="no-decoration-link links-header mr-4" href="#">Atendimento e suporte</a>
+                <div class="navbar-icons">
+                    <a class="no-decoration-link mr-4 navbar-icon" href="#"><i class="bi bi-search"></i></a>
+                    <button class="hamburguer-menu mr-4" id="hamburguerMenu"><i
+                            class="bi bi-list navbar-icon"></i></button>
+                </div>
+            </div>
         </nav>
         <figure>
             <img src="imagem_dev.jpeg" alt="Imagem de uma mulher tomando uma ducha." class="img-fluid header-image">
@@ -162,13 +167,13 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-9 form-group">
+                        <div class="col-8 col-md-9 form-group">
                             <div class="form-input">
                                 <label class="form-label" for="logradouro">Endereço*</label>
                                 <input type="text" name="logradouro" id="logradouro" class="form-control" required>
                             </div>
                         </div>
-                        <div class="col-3 form-group">
+                        <div class="col-4 col-md-3 form-group">
                             <div class="form-input">
                                 <label class="form-label" for="numero">Número*</label>
                                 <input type="text" name="numero" id="numero" class="form-control" required>
